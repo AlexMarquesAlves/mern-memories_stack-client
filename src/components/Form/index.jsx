@@ -71,12 +71,23 @@ function Form() {
         </div>
         <Button
           className={classes.buttonSubmit}
-          variant={"container"}
+          variant={"contained"}
           color={"primary"}
           size={"large"}
           type={"submit"}
           fullWidth
-        ></Button>
+        >
+          Submit
+        </Button>
+        <Button
+          variant={"contained"}
+          color={"secondary"}
+          size={"small"}
+          onClick={clear}
+          fullWidth
+        >
+          Clear
+        </Button>
       </form>
     </Paper>
   );
