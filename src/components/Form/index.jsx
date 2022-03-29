@@ -33,6 +33,14 @@ function Form() {
             setPostData({ ...postData, creator: e.target.value })
           }
         />
+        <TextField
+          name="title"
+          variant="outlined"
+          label={"Title"}
+          fullWidth
+          value={postData.title}
+          onChange={(e) => setPostData({ ...postData, title: e.target.value })}
+        />
       </form>
     </Paper>
   );
