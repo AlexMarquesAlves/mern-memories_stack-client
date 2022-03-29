@@ -41,6 +41,16 @@ function Form() {
           value={postData.title}
           onChange={(e) => setPostData({ ...postData, title: e.target.value })}
         />
+        <TextField
+          name="message"
+          variant="outlined"
+          label={"Message"}
+          fullWidth
+          value={postData.message}
+          onChange={(e) =>
+            setPostData({ ...postData, message: e.target.value })
+          }
+        />
       </form>
     </Paper>
   );
