@@ -1,7 +1,7 @@
+import { Button, Paper, TextField, Typography } from "@material-ui/core";
 import React, { useState } from "react";
-import useStyles from "./styles";
 import FileBase from "react-file-base64";
-import { TextField, Button, Typography, Paper } from "@material-ui/core";
+import useStyles from "./styles";
 
 function Form() {
   const classes = useStyles();
