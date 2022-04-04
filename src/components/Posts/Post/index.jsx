@@ -16,7 +16,15 @@ import moment from "moment";
 function Post({ post }) {
   const classes = useStyles();
 
-  return <Card className={classes.card}></Card>;
+  return (
+    <Card className={classes.card}>
+      <CardMedia
+        className={classes.media}
+        image={post.selectedFile}
+        title={post.title}
+      />
+    </Card>
+  );
 }
 
 export default Post;
