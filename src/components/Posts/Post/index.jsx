@@ -49,7 +49,13 @@ function Post({ post }) {
         </Typography>
       </CardContent>
 
-      <CardActions className={classes.cardActions}></CardActions>
+      <CardActions className={classes.cardActions}>
+        <Button size="small" color="primary" onClick={() => {}}>
+          <ThumbUpAltIcon fontSize="small" />
+          Like
+          {post.likeCount}
+        </Button>
+      </CardActions>
     </Card>
   );
 }
