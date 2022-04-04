@@ -48,6 +48,8 @@ function Post({ post }) {
           {post.message}
         </Typography>
       </CardContent>
+
+      <CardActions className={classes.cardActions}></CardActions>
     </Card>
   );
 }
