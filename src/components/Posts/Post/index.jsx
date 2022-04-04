@@ -29,6 +29,7 @@ function Post({ post }) {
           {moment(post.createdAt).fromNow()}
         </Typography>
       </div>
+      <div className={classes.overlay2}></div>
     </Card>
   );
 }
