@@ -2,8 +2,10 @@ import { Button, Paper, TextField, Typography } from "@material-ui/core";
 import React, { useState } from "react";
 import FileBase from "react-file-base64";
 import { useDispatch } from "react-redux";
-import { createPost } from "../../actions/posts";
+import { createPosts } from "../../actions/posts";
 import useStyles from "./styles";
+
+// Get the Current Id
 
 function Form() {
   const classes = useStyles();
@@ -19,7 +21,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(createPost(postData));
+    dispatch(createPosts(postData));
   };
 
   const clear = () => {};
